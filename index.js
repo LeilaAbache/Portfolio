@@ -108,6 +108,7 @@ competenceItems.forEach((item) => {
   item.addEventListener("mouseover", function () {
     survolDiv.style.opacity = "0";
     texteAfficherDiv.style.opacity = "1";
+    texteAfficherDiv.style.background = "white";
   });
 
   item.addEventListener("mouseout", function (event) {
@@ -118,3 +119,16 @@ competenceItems.forEach((item) => {
     }
   });
 });
+
+/* modale menu navigation */
+
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach((trigger) =>
+  trigger.addEventListener("click", toggleModal)
+);
+
+function toggleModal() {
+  modalContainer.classList.toggle("active");
+}
