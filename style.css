@@ -428,7 +428,9 @@ footer p {
     
 }
 */
-
+#modal-btn {
+    display: none;
+}
 .modal-btn {
     padding: 10px 14px;
     font-size: 18px;
@@ -500,4 +502,12 @@ footer p {
     background: red;
     color:white;
 
+}
+
+
+@media screen and (max-width: 600px) {
+    #modal-btn {
+        display: block;
+    }
+    
 }
