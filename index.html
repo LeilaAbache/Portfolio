@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Leila Abache</title>
+    <script src="https://kit.fontawesome.com/5806bac3d3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<body>
+    <div class="canvas-container">
+    <canvas id="gradient-canvas"></canvas>
+    </div>
+    <header>
+        <!--barre de nav (logo + menu)-->
+        <nav>
+            <img class="photo" src="images/ma-photo.jpeg" alt="Ma photo">
+            
+            <ul class="menu-nav">
+                <li>
+                    <a href="#profil">Profil</a>
+                </li>
+                <li>
+                    <a href="#competences">Compétences</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!--
+        <div id="side-bar">
+            
+            <div class="toggle-btn" id="btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="side-bar-ul">
+                <li>
+                    <a href="">Profil</a>
+                </li>
+                <li>
+                    <a href="">Compétences</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div> -->
+
+        <!--titre-->
+        <section class="fiche-accueil">
+            <h1>Leila Abache</h1>
+            <h2>Développeuse Web</h2>
+            <!--lien portfolio-->
+            <div class="lien-travaux">
+            <a href="#portfolio">Voir mon travail</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!--a propos-->
+        <section class="a-propos" id="profil">
+            <div class="photo-container">
+                <img class="photo-2" src="images/ma-photo.jpeg" alt="Ma photo">
+            </div>
+            
+            <h3>Qui suis-je ?</h3>
+            <p>Je suis une femme dynamique dans la quarantaine, forte d'une expérience professionnelle sur les réseaux sociaux. J'ai suivi une formation approfondie en développement et web design.<br>
+                <br>N'hésitez pas à parcourir mon portfolio pour découvrir mes réalisations et à me contacter pour discuter de vos besoins en développement web, en rédaction web ou en community management.<br>
+                <br>Ensemble, nous pouvons créer des interfaces utilisateur remarquables, des contenus attrayants et une présence en ligne percutante pour votre entreprise ou votre projet.
+            </p>
+        </section>
+
+        <!--compétences-->
+        <section class="competences" id="competences">
+            <h3>Mes compétences</h3>
+            <ul class="li-competences">
+                <li class="container competence-item" data-index="1">     
+                  <div class="survol">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h4>Rédaction Web</h4>   
+                  </div>
+                  <div class="texte-afficher">
+                    <p>Création de contenus captivants, uniques et optimisés pour le web. Utilisation des techniques de référencement (SEO) et étude du public cible pour un maximum de visibilité et de conversion en ligne.</p>             
+                  </div>
+                </li>
+                <li class="container competence-item" data-index="2">
+                  <div class="survol">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Développement Web</h4>
+                  </div>
+                  <div class="texte-afficher">
+                    <p>Utilisation de technologies performantes pour développer des applications frontend attrayantes et interactives. Solution backend pour une gestion efficace des données.</p>  
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-node"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <i class="fa-brands fa-figma"></i>
+                  </div>
+                </li>
+                <li class="container competence-item" data-index="3">           
+                  <div class="survol">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <h4>Community Management</h4> 
+                  </div>
+                  <div class="texte-afficher i-texte-3">
+                    <p>Gestion et animation de réseaux sociaux.<br>Objectifs : une présence en ligne forte, un engagement de la communauté et le développement de la notoriété. </p>              
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-trello"></i>
+                  </div>
+                </li>
+            </ul>
+              
+            <div class="liens-competences">
+            <a href="https://github.com/LeilaAbache" class="github"><i class="fa-brands fa-github"></i></a>
+            <a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/nosptitsloupsseveillent/?hl=fr" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </section>
+
+        <!--portfolio-->
+        <section class="portfolio" id="portfolio">
+            <h3>Mon portfolio</h3>
+            <!--Affichage des projets par JS-->
+            <div id="gallery"></div>
+        </section>
+
+        <!--contact-->
+        <section class="contact" id="contact">
+            <h3>Me contacter</h3>
+            <p>Je suis ravie que vous visitiez mon portfolio ! Si vous avez des questions, des projets passionnants à discuter ou si vous souhaitez simplement échanger, n'hésitez pas à me contacter.<br><br>
+                Je suis ouverte aux nouvelles opportunités de collaboration et j'aimerais entendre parler de vos projets. Que vous soyez un employeur potentiel, un collègue passionné ou tout simplement quelqu'un qui veut dire bonjour, je serais heureuse de vous lire.<br><br>
+                À Très bientôt !</p>
+            <ul class="li-contact">
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:leiladevw60@gmail.com">leiladevw60@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a class="googlemap" href="https://www.google.com/maps?q=60160+Montataire">60160 Montataire</a>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="gradient-footer">
+        </div>
+        <p>© Copyright 2023 - Leila Abache. Tous droits réservés.</p>
+    </footer>
+
+    <script src="animation.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Kasa",
+        "cover": "images/composition-kasa-removebg.png",
+        "role": "Développeuse front-end",
+        "year": 2023,
+        "technologie": "React, Javascript, CSS, Figma",
+        "description": "Développement front-end d'un site de location d’hébergement en technologie React. Création des composants, des routes, étude et découpage des maquettes Figma. Application entièrement responsive.",
+        "website": "",
+        "github": "https://github.com/LeilaAbache/kasa-OPC6"
+    },
+    {
+        "title": "Booki",
+        "cover": "images/composition-booki-removebg.png",
+        "role": "Développeuse front-end",
+        "year": 2023,
+        "technologie": "HTML, CSS, Figma",
+        "description": "Développement et intégration de l'interface front-end d'un site de location d’hébergements. Application responsive.",
+        "website": "",
+        "github": "https://github.com/LeilaAbache/OCP2"
+    } 
+]
