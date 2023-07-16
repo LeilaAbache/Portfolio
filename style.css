@@ -207,7 +207,7 @@ h4 {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* Ajout du cadre avec une bordure transparente par défaut */
+    background-color: rgba(255, 255, 255, 0.2); /* Ajout du cadre avec une bordure transparente par défaut */
     transition: opacity 0.8s ease;
     border-radius: 1px;
     height: 250px;
