@@ -132,3 +132,10 @@ modalTriggers.forEach((trigger) =>
 function toggleModal() {
   modalContainer.classList.toggle("active");
 }
+
+/*window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  var canvas = document.querySelector("#gradient-canvas");
+  header.style.position = "fixed";
+  canvas.style.position = "fixed";
+});*/
