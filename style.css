@@ -1,7 +1,9 @@
+/* Général */
 html, body {
     width: 100%;
     overflow-x: hidden;
 }
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -93,7 +95,7 @@ h1 {
     font-weight: 400;
     font-size:5rem;
     text-align:center;
-    mix-blend-mode: difference;
+    /*mix-blend-mode: difference;*/
 }
 
 h2 {
@@ -278,7 +280,7 @@ aside {
     padding: 30px;
 }
 
-aside a{
+aside a {
     font-weight: 600;
 }
 
@@ -387,22 +389,20 @@ footer p {
     color:#0a2540;
     position: relative;
     top: -5px;
-    left: 50%; /* Remplacez "35%" par "50%" */
+    left: 50%;
     transform: translateX(-50%);
 }
 
 .modal-container {
-    /*display: none;*/
     visibility: hidden;
     position: fixed;
     top: 0;
-    width: 100vw;
-    height: 800px;;
+    width: 100%;
+    height: 800px;
     transition: visibility 0.4s;
 }
 
 .modal-container.active {
-    /*display: block;*/
     visibility: visible;
 }
 
@@ -411,49 +411,38 @@ footer p {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #333333d3;
+    background: #edececd3;
     transition: opacity 0.4s 0.2s ease-out;
 }
 
 .modal-container.active .overlay {
-    opacity: 1;
+    opacity: 0.5;
     transition: opacity 0.4s ease-out;
 }
 
 .modal {
     opacity: 0;
-    width: 95%;
-    max-width: 400px;
-    min-width: 300px;
     padding: 30px;
     background: white;
     border-radius: 5px;
     position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-20%, calc(-50% - 50px));
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     transition: opacity 0.4s ease-out,
-    tranform 0.4s ease-out;
 }
 
 .modal-container.active .modal {
     opacity: 1;
-    transform: translate(-50%, -50%);
     transition: opacity 0.4s 0.2s ease-out,
-    transform 0.4s 0.2s ease-out;
 }
 
-.close-modal {
-    padding: 8px 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    background: red;
-    color:white;
+.menu-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
@@ -503,45 +492,45 @@ footer p {
         padding: 20px 100px;
     }
     .competences {
-    padding-top: 20px;
-    height: 1150px;
-    gap: 50px;
+        padding-top: 20px;
+        height: 1150px;
+        gap: 50px;
     }
     .li-competences {
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 20px;
-    right: 40px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 20px;
+        right: 40px;
     }
     .li-competences i {
-    font-size: 80px;
+        font-size: 80px;
     }
     h4 {
-    font-size: 1.5rem;
-    font-weight: 350;
+        font-size: 1.5rem;
+        font-weight: 350;
     }
     .li-competences li {
-    width: 70%;
+        width: 70%;
     }
     .li-competences p {
-    font-size: 15px;
+        font-size: 15px;
     }
     .texte-afficher i {
-    font-size: 30px;
+        font-size: 30px;
     }
     .container {
-    margin: 150px;
+        margin: 150px;
     }
     .survol, .texte-afficher {
-    height: 200px;
+        height: 200px;
     }
     .liens-competences {
-    position: relative;
-    top: -150px;
+        position: relative;
+        top: -150px;
     }
     .texte-afficher p {
-    padding: 10px 30px 0 30px;
+        padding: 10px 30px 0 30px;
     } 
 }
 @media screen and (max-width: 800px) {
@@ -640,7 +629,6 @@ footer p {
     .li-competences {
         right: 110px;
     }
-
     .li-competences li {
         width: 80%;
     }
@@ -671,10 +659,10 @@ footer p {
         font-weight: 500;
     }
     .li-contact {
-    gap: 20px;
+        gap: 20px;
     }
     footer p {
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 
