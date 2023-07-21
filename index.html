@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Leila Abache</title>
+    <title>Leila Abache - Portfolio</title>
     <script src="https://kit.fontawesome.com/5806bac3d3.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="images/logo-leiladev.png">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,51 +40,25 @@
         </nav>
 
         <div class="modal-container">
-
             <div class="overlay modal-trigger"></div>
-            
-            <div class="modal" role="dialog" aria-labelledby="modalTitle">
-                <button aria-label="close modal" class="close-modal modal-trigger">X</button>
-                <p id="modalTitle"></p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, doloribus molestiae at culpa ipsa veniam, neque, sunt quia a distinctio exercitationem debitis animi sed fugit consequuntur iure doloremque deleniti perferendis.</p>
+            <div class="modal">
+                <div class="menu-modal">
+                    <a href="#profil" class="modal-link">Profil</a>
+                    <a href="#competences" class="modal-link">Compétences</a>
+                    <a href="#portfolio" class="modal-link">Portfolio</a>
+                    <a href="#contact" class="modal-link">Contact</a>
+                </div>
             </div>
-            
         </div>
-    
         <button id="modal-btn" class="modal-btn modal-trigger"><i class="fa-solid fa-bars"></i></button>
-    
-    
-        <!--
-        <div id="side-bar">
-            
-            <div class="toggle-btn" id="btn">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <ul class="side-bar-ul">
-                <li>
-                    <a href="">Profil</a>
-                </li>
-                <li>
-                    <a href="">Compétences</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </div> -->
-
+        
         <!--titre-->
         <section class="fiche-accueil">
             <h1>Leila Abache</h1>
             <h2>Développeuse Web</h2>
             <!--lien portfolio-->
             <div class="lien-travaux">
-            <a href="#portfolio">Voir mon travail</a>
+                <a href="#portfolio">Voir mon travail</a>
             </div>
         </section>
     </header>
@@ -94,8 +68,7 @@
         <section class="a-propos" id="profil">
             <div class="photo-container">
                 <img class="photo-2" src="images/ma-photo.jpeg" alt="Ma photo">
-            </div>
-            
+            </div>         
             <h3>Qui suis-je ?</h3>
             <p>Je suis une femme dynamique dans la quarantaine, forte d'une expérience professionnelle sur les réseaux sociaux. J'ai suivi une formation approfondie en développement et web design.<br>
                 <br>N'hésitez pas à parcourir mon portfolio pour découvrir mes réalisations et à me contacter pour discuter de vos besoins en développement web, en rédaction web ou en community management.<br>
@@ -113,8 +86,12 @@
                     <h4>Rédaction Web</h4>   
                   </div>
                   <div class="texte-afficher">
-                    <p>Création de contenus captivants, uniques et optimisés pour le web. Utilisation des techniques de référencement (SEO) et étude du public cible pour un maximum de visibilité et de conversion en ligne.</p>             
-                  </div>
+                    <p>Création de contenus captivants, uniques et optimisés pour le web. Utilisation des techniques de référencement (SEO) et étude du public cible pour un maximum de visibilité et de conversion en ligne.</p>                        
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <i class="fa-solid fa-newspaper"></i>
+                    <i class="fa-solid fa-spell-check"></i>
+                    <i class="fa-brands fa-trello"></i>
+                </div>
                 </li>
                 <li class="container competence-item" data-index="2">
                   <div class="survol">
@@ -145,15 +122,14 @@
                     <i class="fa-brands fa-tiktok"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-trello"></i>
                   </div>
                 </li>
             </ul>
               
             <div class="liens-competences">
-            <a href="https://github.com/LeilaAbache" class="github"><i class="fa-brands fa-github"></i></a>
-            <a href="" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/nosptitsloupsseveillent/?hl=fr" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/LeilaAbache" class="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/leila-abache-a17a79284" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/nosptitsloupsseveillent/?hl=fr" class="instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
 
         </section>

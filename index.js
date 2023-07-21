@@ -1,17 +1,4 @@
-/* Sidebar */
-/*const sidebar = document.getElementById("side-bar");
-const content = document.querySelector(".fiche-accueil");
-
-btn.addEventListener("click", () => {
-  sidebar.classList.toggle("active");
-});
-
-content.addEventListener("click", () => {
-  sidebar.classList.remove("active");
-});*/
-
 /* Afficher les projets */
-
 fetch("travaux.json")
   .then((response) => response.json())
   .then((data) => {
@@ -19,7 +6,7 @@ fetch("travaux.json")
     // Les données du fichier JSON sont disponibles ici
     const galleryDiv = document.getElementById("gallery");
 
-    // Manipulez les données et affichez-les dans la balise <div>
+    // Manipule les données et les affichez dans la balise <div>
     data.forEach((item) => {
       galleryDiv.innerHTML += `<article class="article">
         <div class="image-portfolio">
@@ -51,7 +38,6 @@ fetch("travaux.json")
   });
 
 /* Geolocalisation */
-
 const googleMap = document.querySelector(".googlemap");
 
 googleMap.addEventListener("click", () => {
@@ -80,7 +66,6 @@ googleMap.addEventListener("click", () => {
 });
 
 /* Fonction pour le défilement en douceur vers une ancre */
-
 function smoothScroll(target) {
   document.querySelector(target).scrollIntoView({
     behavior: "smooth", // Utiliser une animation de défilement en douceur
@@ -121,21 +106,32 @@ competenceItems.forEach((item) => {
 });
 
 /* modale menu navigation */
-
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
+const modalLinks = document.querySelectorAll(".modal-link");
 
 modalTriggers.forEach((trigger) =>
   trigger.addEventListener("click", toggleModal)
 );
 
+modalLinks.forEach((link) =>
+  link.addEventListener("click", (event) => {
+    // Empêche le comportement par défaut du lien (aller à l'ancre)
+    event.preventDefault();
+
+    // Ferme la modale
+    modalContainer.classList.remove("active");
+
+    // Détermine la cible de l'ancre (l'ID de l'élément)
+    const target = link.getAttribute("href");
+
+    // Scrolle jusqu'à l'ancre
+    document.querySelector(target).scrollIntoView({
+      behavior: "smooth",
+    });
+  })
+);
+
 function toggleModal() {
   modalContainer.classList.toggle("active");
 }
-
-/*window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  var canvas = document.querySelector("#gradient-canvas");
-  header.style.position = "fixed";
-  canvas.style.position = "fixed";
-});*/
