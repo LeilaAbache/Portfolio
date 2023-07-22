@@ -135,3 +135,17 @@ modalLinks.forEach((link) =>
 function toggleModal() {
   modalContainer.classList.toggle("active");
 }
+
+// Fonction pour retirer le focus après le clic sur un lien
+function removeFocusAfterClick() {
+  const focusedElement = document.activeElement;
+  focusedElement.blur();
+}
+
+// Récupérer tous les liens du site
+const allLinks = document.querySelectorAll("a");
+
+// Ajouter l'événement onclick à chaque lien pour retirer le focus après le clic
+allLinks.forEach((link) => {
+  link.addEventListener("click", removeFocusAfterClick);
+});

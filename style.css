@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    background: linear-gradient(to left, #ff9a27, #b54ef9, #24d3fb);
+    background: linear-gradient(to left, #27ff97, #5044f8, #f94e76);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: background-position 1s ease;
@@ -632,6 +632,9 @@ footer p {
     .li-competences li {
         width: 80%;
     }
+    .texte-afficher p {
+        padding: 10px 10px 0 10px;
+    } 
     .portfolio {
         margin-top: 40px;
     }
