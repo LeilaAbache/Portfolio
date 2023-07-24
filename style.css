@@ -315,6 +315,16 @@ h5 {
     padding-right: 20px;
 }
 
+.tech {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    font-size: 20px;
+    font-weight:500;
+    background: linear-gradient(to left, #291bf5, #f32555);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Contact */
 .li-contact {
     display: flex;

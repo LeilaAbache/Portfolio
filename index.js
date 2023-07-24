@@ -1,13 +1,17 @@
 /* Afficher les projets */
+// envoie une requête pour récupérer le contenu du fichier "travaux.json"
 fetch("travaux.json")
+  // extrait les données JSON de la réponse.
   .then((response) => response.json())
+  // les données sont passées pour être manipulées et affichées
   .then((data) => {
     console.log(data);
-    // Les données du fichier JSON sont disponibles ici
+    // Récupère l'élément HTML "gallery", utilisé pour afficher la galerie des travaux
     const galleryDiv = document.getElementById("gallery");
 
-    // Manipule les données et les affichez dans la balise <div>
+    // Parcourt chaque élément dans les données JSON récupérées
     data.forEach((item) => {
+      // Pour chaque travail, crée une structure HTML et l'ajoute à l'élément de la galerie
       galleryDiv.innerHTML += `<article class="article">
         <div class="image-portfolio">
           <img src="${item.cover}" alt="${item.title}">
@@ -17,7 +21,11 @@ fetch("travaux.json")
             <div class="detail-1">
               <h5>${item.title}</h5>
               <p>${item.role}</p>
-              <p>${item.technologie}</p>
+              <p>
+                <ul class="tech">
+                  ${item.technologie.map((tech) => `<li>${tech}</li>`).join("")}
+                </ul>
+              </p>
               <p>${item.year}</p>
             </div>
             <div class="detail-2">
@@ -68,17 +76,17 @@ googleMap.addEventListener("click", () => {
 /* Fonction pour le défilement en douceur vers une ancre */
 function smoothScroll(target) {
   document.querySelector(target).scrollIntoView({
-    behavior: "smooth", // Utiliser une animation de défilement en douceur
+    behavior: "smooth", // Utilise une animation de défilement en douceur
   });
 }
 
 // Gestionnaire d'événement pour chaque lien avec une ancre
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault(); // Empêcher le comportement de clic par défaut
+    e.preventDefault(); // Empêche le comportement de clic par défaut
 
-    const target = this.getAttribute("href"); // Récupérer la valeur de l'attribut href (l'ancre cible)
-    smoothScroll(target); // Appeler la fonction pour faire défiler en douceur jusqu'à l'ancre cible
+    const target = this.getAttribute("href"); // Récupère la valeur de l'attribut href (l'ancre cible)
+    smoothScroll(target); // Appelle la fonction pour faire défiler en douceur jusqu'à l'ancre cible
   });
 });
 
@@ -97,7 +105,7 @@ competenceItems.forEach((item) => {
   });
 
   item.addEventListener("mouseout", function (event) {
-    // Vérifier si le curseur se trouve en dehors de l'élément li
+    // Vérifie si le curseur se trouve en dehors de l'élément li
     if (!item.contains(event.relatedTarget)) {
       survolDiv.style.opacity = "1";
       texteAfficherDiv.style.opacity = "0";
@@ -105,7 +113,7 @@ competenceItems.forEach((item) => {
   });
 });
 
-/* modale menu navigation */
+/* Modale menu navigation */
 const modalContainer = document.querySelector(".modal-container");
 const modalTriggers = document.querySelectorAll(".modal-trigger");
 const modalLinks = document.querySelectorAll(".modal-link");
