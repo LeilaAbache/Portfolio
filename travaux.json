@@ -15,7 +15,7 @@
         "role": "Développeuse front-end",
         "year": 2023,
         "technologie": ["HTML", "CSS", "Figma"],
-        "description": "Développement et intégration de l'interface front-end d'un site de location d’hébergements. Application responsive.",
+        "description": "Développement et intégration de l'interface front-end d'un site de location d’hébergements. Réalisé à partir d'une maquette Figma. Application entièrement responsive.",
         "website": "https://leilaabache.github.io/OCP2/",
         "github": "https://github.com/LeilaAbache/OCP2"
     } 

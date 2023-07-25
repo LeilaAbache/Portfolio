@@ -21,15 +21,15 @@ fetch("travaux.json")
             <div class="detail-1">
               <h5>${item.title}</h5>
               <p>${item.role}</p>
+              <p>${item.year}</p>
+            </div>
+            <div class="detail-2">
+              <p>${item.description}</p>
               <p>
                 <ul class="tech">
                   ${item.technologie.map((tech) => `<li>${tech}</li>`).join("")}
                 </ul>
               </p>
-              <p>${item.year}</p>
-            </div>
-            <div class="detail-2">
-              <p>${item.description}</p>
             </div>
           </div>
           <aside>

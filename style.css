@@ -320,9 +320,16 @@ h5 {
     padding-inline-start: 0;
     font-size: 20px;
     font-weight:500;
-    background: linear-gradient(to left, #291bf5, #f32555);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#e1e7ed;
+    display: flex;
+    gap: 20px;
+}
+
+.tech li {
+    background: linear-gradient(to right, rgba(62, 217, 252, 0.3), rgba(168, 50, 248, 0.3), rgba(251, 154, 43, 0.3));
+    padding: 7px;
+    border-radius: 2px;
+    border: 1px solid #e1e7ed;
 }
 
 /* Contact */
